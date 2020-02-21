@@ -1,0 +1,305 @@
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+    /**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+    .section-politika
+        padding: 40px 0
+
+
+    .toggle-menu
+        display: block
+
+
+
+    // header
+    .header
+        position: fixed
+        top: 0
+        right: 0
+        left: -100%
+        bottom: 0
+        height: 100vh
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        background-color: #ffffff
+        z-index: 999
+        font-size: 18px
+        overflow: hidden
+        min-height: 568px
+        transition: $transition
+        &_active
+            left: 0
+        &__mobile-hide
+            display: none
+        &__order
+            order: -1
+
+
+        // header__top
+        &__top
+            background: none
+
+
+        &__justify
+            display: flex
+            flex-direction: column
+        &__col
+            display: flex
+            flex-direction: column
+            text-align: center
+
+        &__link-col + &__link-col
+            margin-left: 0
+            margin-top: 5px
+
+        &__social
+            margin: 10px 0 0px
+            display: flex
+            justify-content: space-around
+            align-items: center
+            font-size: 20px
+
+        // header__bottom
+        &__bottom
+            background: none
+            box-shadow: none
+
+        &__inner
+            flex-direction: column
+
+        &__nav
+            display: flex
+            flex-direction: column
+        &__link + &__link
+            margin-top: 15px
+            margin-left: 0
+        // .header__link-col
+        &__link-col
+            margin-left: 0!important
+
+        &__logo
+            margin-bottom: 10px
+        &__image
+            height: 40px
+
+    .mtop
+        margin-top: 0
+
+    // section
+    .section
+        height: 100vh
+        // .section__title
+        &__title
+
+            margin-bottom: 40px
+            font-size: 35px
+
+
+        // .section__btn-block
+        &__btn-block
+            margin-top: 40px
+            display: flex
+            justify-content: start
+            align-items: center
+
+
+    // section-standart
+    .section-standart
+        // .section-standart__inner
+        &__inner
+            padding: 40px 0
+        // .section-standart__suptitle
+        &__suptitle
+            font-size: 14px
+
+        // .section-standart__title
+        &__title
+            margin-bottom: 40px
+
+            font-size: 30px
+
+        // .section-standart__grid
+        &__grid
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 20px
+            justify-content: center
+            align-items: start
+
+
+    // .advantages__grid
+    .advantages
+        &__grid
+            grid-template-columns: repeat(2, 1fr)
+
+
+    // .breadcamps-wrap
+    .breadcamps-wrap
+        margin-top: 0!important
+
+
+    // .usluga__title
+    .usluga__title
+        font-size: 35px
+
+
+    // contacts
+    .contacts
+
+        margin-top: 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+    .section-standart__item
+        min-height: 100px
+
+    .section-standart__item-btn
+        display: block
+        border-color: $color-accent
+        color: $color-accent
+
+    // section
+    .section
+        height: 100vh
+        // .section__inner
+        &__inner
+
+            margin-left: 0
+
+        // .section__title
+        &__title
+
+            margin-bottom: 40px
+            font-size: 28px
+        // .section__text
+        //&__text
+
+        // .section__btn-block
+        &__btn-block
+            margin-top: 40px
+            display: flex
+            justify-content: start
+            align-items: center
+
+
+
+    // section-standart
+    .section-standart
+        // .section-standart__inner
+        &__inner
+            padding: 40px 0
+        // .section-standart__suptitle
+        &__suptitle
+            font-size: 12px
+
+        // .section-standart__title
+        &__title
+            margin-bottom: 40px
+
+            font-size: 26px
+
+        // .section-standart__grid
+        &__grid
+            display: grid
+            grid-template-columns: repeat(1, 1fr)
+            grid-gap: 20px
+            justify-content: center
+            align-items: start
+
+
+    // .advantages__grid
+    .advantages__grid
+        grid-template-columns: 1fr
+
+
+    // section-uslugi__title
+    .section-uslugi__title
+        font-size: 30px
+
+
+
+    // .footer__inner
+    .footer__inner
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 35px
+        padding: 20px 0
+    // .footer__item
+    .footer__item
+        padding: 10px
+    // .footer__logo
+    .footer__logo
+        margin: 0 auto
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+
+
+    // .footer__inner
+    .footer__inner
+        display: grid
+        grid-template-columns: 1fr
+    // .footer__item
+    .footer__item
+
+        text-align: center
+    // .footer__logo
+    .footer__logo
+        margin: 0 auto
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+
+    .callback__inner
+        padding: 20px 0
+    .callback__title
+        font-size: 20px
+
+    // .header__top
+    .header__top
+        margin-bottom: 40px
+
+
+    // usluga_btn-block
+    .usluga_btn-block
+        display: flex
+        flex-direction: column
+        .btn
+            margin-bottom: 15px
+        .mleft
+            margin-left: 0!important
+
+    // .section__btn-block
+
+    .section__btn-block
+        flex-direction: column
+        .btn
+            margin: 0
+            width: 100%
+            text-align: center
+        .btn + .btn
+            margin-top: 20px
+
+    // .mleft
+    .mleft
+        margin-left: 0!important
+
+    // .usluga__inner
+    .usluga__inner
+        padding: 50px 0
+
+
+    .section-uslugi__title
+        font-size: 24px

@@ -1,0 +1,679 @@
+@import "vars"
+@import "toggle"
+@import "image"
+body
+    margin: 0
+    padding: 0
+    font-size: 15px
+    color: #333
+    line-height: 1.6
+    font-family: 'Istok Web', sans-serif
+
+
+*,
+*:before,
+*:after
+    box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6, p
+    margin: 0
+
+
+.container
+    width: 100%
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0 15px
+
+.btn
+    text-decoration: none
+    color: $color-dark
+    font-size: .875rem
+    padding: 8px 20px
+    border-radius: $border-radius
+    // .btn__accent
+    &__accent
+        background: linear-gradient(to right, #356797 0, #4389c7 100%)
+        color: #fff
+        transition: $transition
+        &:hover
+            background: linear-gradient(to right, #4389c7 0, #356797 100%)
+    // .btn__gray
+    &__gray
+        border: $border
+        transition: $transition
+        &:hover
+            background-color: $color-dark
+            color: #fff
+
+
+
+
+.btn-white
+    text-decoration: none
+    color: #fff
+    border: $border-white
+    font-size: .875rem
+    padding: 8px 20px
+    border-radius: $border-radius
+    transition: $transition
+    &:hover
+        background-color: #fff
+        color: $color-accent
+
+
+
+.breadcamps
+    list-style: none
+    margin: 0
+    padding: 0
+
+    li
+        display: inline-block
+
+    &__link
+        color: #333333
+
+        &_active
+            color: $color-accent
+    &-wrap
+        width: 100%
+        padding: 15px 0
+        margin-top: 123px
+        color: #333
+
+
+// .callback-popup
+.callback-popup
+    position: fixed
+    z-index: 9999
+    top: 0
+    right: 0
+    left: 0
+    bottom: 100%
+    width: 100%
+    background-color: #fff
+    overflow: hidden
+    display: flex
+    align-items: center
+    &__close
+        margin-left: auto
+        color: #333
+
+        padding-right: 15px
+        padding-bottom: 15px
+
+    &_active
+        bottom: 0
+    .callback__form
+        z-index: 99999
+.close-block
+    width: 100%
+    display: flex
+    justify-content: flex-end
+
+// Header
+.header
+    width: 100%
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    transition: $transition
+    z-index: 2
+    //    .header__top
+    &__top
+        width: 100%
+        background-color: $color-dark
+        padding: 10px
+
+    // .header__justify
+    &__justify
+        display: flex
+        justify-content: space-between
+    // .header__col
+    &__col
+        display: flex
+
+    // .header__link-col
+    &__link-col
+        text-decoration: none
+        color: $color-gray
+        transition: $transition
+        &:hover
+            color: #fff
+    &__link-col + &__link-col
+        margin-left: 15px
+
+    // .header__bottom
+    &__bottom
+        background-color: #fff
+        box-shadow: 0 0 0.8125rem 0 rgba(77,82,94,.15)
+
+    // .header__inner
+    &__inner
+        text-align: center
+        padding: 15px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+    // .header__logo
+    &__logo a
+        display: block
+
+    // .header__image
+    &__image
+        height: 40px
+
+    // .header__nav
+
+
+    // .header__link
+    &__link
+        text-decoration: none
+        color: #333
+        transition: $transition
+        font-weight: 700
+        position: relative
+        &:hover
+            color: $color-accent
+        &::after
+            content: ''
+            width: 0
+            height: 2px
+            background-color: $color-accent
+            position: absolute
+            right: 50%
+            top: 120%
+            transform: translate(50%, 0)
+            transition: $transition
+        &:hover::after
+            width: 100%
+        &_active::after
+            content: ''
+            width: 100%
+            height: 2px
+            background-color: $color-accent
+            position: absolute
+            right: 50%
+            top: 120%
+            transform: translate(50%, 0)
+            transition: $transition
+
+    &__link + &__link
+        margin-left: 25px
+
+.header-fixed
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+
+
+
+
+// section
+.section
+    width: 100%
+    height: calc(100vh - 70px)
+    min-height: 560px
+    display: flex
+    align-items: center
+
+
+
+    // .section__inner
+    &__inner
+        width: 100%
+        max-width: 450px
+        color: #ffffff
+        margin-left: 60px
+
+    // .section__title
+    &__title
+        text-align: start
+        font-family: $font-montserat
+        margin-bottom: 40px
+        font-size: 40px
+    // .section__text
+    //&__text
+
+    // .section__btn-block
+    &__btn-block
+        margin-top: 40px
+        display: flex
+
+        justify-content: start
+        align-items: center
+
+
+
+
+// section-standart
+.section-standart
+    width: 100%
+    margin: 0 auto
+    // .section-standart__inner
+    &__inner
+        padding: $section-padding 0
+    // .section-standart__suptitle
+    &__suptitle
+        color: $color-accent
+        text-transform: uppercase
+        text-align: center
+    // .section-standart__title
+    &__title
+        font-family: $font-montserat
+        font-size: $title-size
+        text-align: center
+        margin-bottom: 56px
+        text-transform: uppercase
+    // .section-standart__grid
+    &__grid
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 20px
+        justify-content: center
+        align-items: start
+
+    // .section-standart__item
+    &__item
+        padding: 25px
+        min-height: 505px
+        display: block
+        text-align: center
+        border: $border-opacity
+        border-radius: .625rem
+        text-decoration: none
+        transition: $transition
+        &:hover
+            background-color: $color-accent
+            border: 1px solid $color-accent
+        &:hover i, &:hover h2, &:hover p
+            color: #fff
+        &:hover .section-standart__item-btn
+            display: block
+
+
+        & i
+            font-size: 100px
+            color: $color-accent
+
+
+            margin-bottom: 20px
+        //    .section-standart__item-title
+        &-title
+            font-size: 24px
+            color: $color-dark
+
+            margin: 0 auto 20px
+
+        //    .section-standart__item-text
+        &-text
+            color: $color-gray
+            margin-bottom: 20px
+
+        &-btn
+            display: none
+            color: #fff
+            padding: 8px 15px
+            border: 1px solid #ffffff
+            border-radius: $border-radius
+            width: 200px
+            margin: 0 auto
+
+// .advantages__grid
+.advantages
+    &__grid
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 20px
+    // .advantages__item
+    &__item
+        display: flex
+        padding: 15px
+    // .advantages__one
+    &__one
+        font-size: 17px
+        color: $color-accent
+        margin-right: 60px
+        margin-top: 3px
+        font-weight: 700
+        position: relative
+        font-family: $font-montserat
+        &::before
+            content: ''
+            position: absolute
+            width: 40px
+            height: 1px
+            background-color: $color-accent
+            left: 30px
+            top: 14px
+
+    // .advantages_two
+
+
+    // .advantages__title
+    &__title
+        font-size: 24px
+        margin-bottom: 20px
+
+    // .advantages__text
+    //&__text
+
+
+// .partners__grid
+.partners
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 40px
+    // .partners__item
+    &__item
+        //width: 300px
+        display: flex
+        justify-content: center
+        align-items: center
+    // .partners__images
+    &__images
+        width: 100%
+        max-width: 250px
+
+// .reviews
+
+.reviews
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 20px
+    // .reviews__container
+    &__container
+        width: 100%
+
+    // .reviews__img
+    &__img
+        width: 100%
+
+
+
+// .usluga
+.usluga
+    width: 100%
+    //height: calc(70vh - 110px)
+
+    color: #ffffff
+
+    display: flex
+    align-content: center
+    // .usluga__inner
+    &__inner
+
+        width: 100%
+        margin: 0 auto
+        text-align: center
+
+        padding: 150px 0
+    // .usluga__title
+    &__title
+        font-size: $title-size
+
+        text-transform: uppercase
+        margin-top: 30px
+    // .usluga__text
+    &__text
+        max-width: 800px
+        margin: 0 auto 35px
+
+
+
+// .callback
+.callback
+    width: 100%
+    // .callback__inner
+    &__inner
+        padding: $section-padding 0
+    // .callback__title
+    &__title
+        text-align: center
+        margin-bottom: 30px
+        font-size: $title-size
+    // .callback__form
+    &__form
+        display: flex
+        flex-direction: column
+        width: 100%
+        max-width: 400px
+        margin: 0 auto
+    // .callback__input
+    &__input
+        padding: 10px 7px
+        border-radius: $border-radius
+        border: $border
+        resize: none
+        font-family: $font-montserat
+    &__input + &__input
+        margin-top: 15px
+    // .callback__btn
+    &__btn
+        border: none
+        margin: 20px auto 0
+        width: 150px
+        cursor: pointer
+    .close-block
+        display: none
+
+// Politika
+.politica
+    margin-top: 20px
+    width: 100%
+    //display: flex
+    justify-content: center
+    align-items: center
+    &__text
+        margin-right: 5px
+
+.section-politika
+    width: 100%
+    padding: 130px 0
+
+// .section-uslugi
+.section-uslugi
+    width: 100%
+    // .section-uslugi__inner
+    &__inner
+        margin: 0 auto
+        width: 100%
+        padding: $section-padding 0
+    // .section-uslugi__title
+    &__title
+        text-align: center
+        font-size: $title-size
+        text-transform: uppercase
+        margin-bottom: 40px
+    // .section-uslugi__text
+
+
+.supline
+    overflow: hidden
+    text-align: center
+    font-size: 30px
+    color: $color-accent
+    margin-bottom: 40px
+    z-index: 1
+
+
+.supline span
+    display: inline-block
+    vertical-align: middle
+.supline:before,
+.supline:after
+    content: ""
+    display: inline-block
+    vertical-align: middle
+    width: 100%
+    height: 2px
+    background-color: $color-accent
+    position: relative
+.supline:before
+    margin-left: -100%
+    left: -14px
+.supline:after
+    margin-right: -100%
+    right: -14px
+
+// contacts
+.contacts
+    width: 100%
+    //margin-top: 120px
+    //.contacts__inner
+    &__inner
+        padding: 80px 0
+        display: flex
+        flex-direction: column
+        width: 100%
+        margin: 0 auto
+        text-align: center
+    // .contacts__title
+    &__title
+        text-align: center
+        text-transform: uppercase
+
+    // .contacts__text
+    &__text
+        padding: 10px 0
+
+        font-weight: 700
+
+    //.contacts__link
+    .contacts__link
+        color: #333
+        text-decoration: none
+
+// .404 errors
+
+.errors
+    height: 100vh
+    display: flex
+    align-content: center
+    align-items: center
+    text-align: center
+    // errors__title
+    &__title
+        text-transform: uppercase
+        margin-bottom: 20px
+    // errors__red
+    &__red
+        font-weight: 700
+
+        font-size: 45px
+        color: red
+
+    // errors__text
+    &__text
+        margin-bottom: 15px
+
+    // errors__link
+    &__link
+        color: #333
+        text-decoration: none
+        margin-bottom: 15px
+        font-weight: 700
+    &__link + &__link
+        margin-left: 15px
+
+
+// Footer
+.footer
+    width: 100%
+    margin: 0 auto
+    background-color: #333
+
+    // .footer__inner
+    &__inner
+        width: 100%
+        margin: 0 auto
+        padding: 60px 0
+        text-align: center
+        color: #fff
+        display: flex
+        justify-content: space-between
+        //grid-gap: 20px
+        //grid-template-columns: 1fr 1fr 1fr 1fr
+
+    // .footer__item
+    &__item
+
+        display: flex
+        flex-direction: column
+        text-align: start
+
+
+    // .footer__logo
+    &__logo
+        max-width: 150px
+        width: 100%
+    // .footer__title
+    &__title
+        font-size: 18px
+        font-weight: 700
+        margin-bottom: 20px
+    // .footer__link
+    &__link
+        color: #fff
+        text-decoration: none
+        transition: $transition
+        &:hover
+            color: $color-accent
+    &__link + &__link
+        margin-top: 15px
+    // .footer__contacts
+    //&__contacts
+    //    display: block
+    //    width: 230px
+    &__contacts_link
+        color: #fff
+        text-decoration: none
+        transition: $transition
+        &:hover
+            color: $color-accent
+    &__contacts + &__contacts
+        margin-top: 15px
+
+
+.bg-start
+    background: url("../images/bizn.jpeg")
+
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    background-color: rgba(0,0,0,.7)
+    background-blend-mode: darken
+
+.bg-scan
+    background: url("../images/bg-usluga-1.jpg")
+    background-position: bottom center
+    background-size: cover
+    background-repeat: no-repeat
+    background-color: rgba(0,0,0,.6)
+    background-blend-mode: darken
+.bg-arhiv
+    background: url("../images/bg-arhiv.jpg")
+    background-position: bottom center
+    background-size: cover
+    background-repeat: no-repeat
+    background-color: rgba(0,0,0,.6)
+    background-blend-mode: darken
+.bg-pechat
+    background: url("../images/bg-pechat.jpg")
+    background-position: bottom center
+    background-size: cover
+    background-repeat: no-repeat
+    background-color: rgba(0,0,0,.6)
+    background-blend-mode: darken
+.bg-autsors
+    background: url("../images/bg-autsors.png")
+    background-position: bottom center
+    background-size: cover
+    background-repeat: no-repeat
+    background-color: rgba(0,0,0,.6)
+    background-blend-mode: darken
+@import "media"
