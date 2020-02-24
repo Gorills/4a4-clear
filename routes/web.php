@@ -44,4 +44,4 @@ Route::get('/politika', function () {
 
 Route::get('/sendemail', 'SendEmailController@index');
 
-Route::post('/sendemail/send', 'SendEMailController@send');
+Route::post('/sendemail/send', 'SendEmailController@send');

@@ -31,7 +31,7 @@ class SendEmailController extends Controller
             'text'   => $request->text
         );
 
-        Mail::to('a.ofisnaya@gmail.com')->send(new SendMail($data));
+        Mail::to('a4.click@mail.ru')->send(new SendMail($data));
         return view('thanks');
     }
 }
