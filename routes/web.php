@@ -42,4 +42,4 @@ Route::get('/politika', function () {
     return view('politika');
 });
 
-
+Route::post('send-mail', 'MailSetting@send_form');
