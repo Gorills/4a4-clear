@@ -139,33 +139,33 @@
                 <h2 class="section-standart__title">нас уже выбрали</h2>
 
                 <div class="partners">
-                    <div class="partners__item">
+                    <a href="#" class="partners__item">
                         <img class="partners__images" src="{{ URL::asset('images/partners/1.png') }}" alt="">
-                    </div>
-                    <div class="partners__item">
+                    </a>
+                    <a href="https://www.creditexpress.ru/#home-slider" class="partners__item">
                         <img class="partners__images" src="{{ URL::asset('images/partners/2.png') }}" alt="">
-                    </div>
-                    <div class="partners__item">
+                    </a>
+                    <a href="http://www.stcollector.ru/" class="partners__item">
                         <img class="partners__images" src="{{ URL::asset('images/partners/3.png') }}" alt="">
-                    </div>
-                    <div class="partners__item">
+                    </a>
+                    <a href="https://rsvcollection.ru/" class="partners__item">
                         <img class="partners__images" src="{{ URL::asset('images/partners/4.png') }}" alt="">
-                    </div>
-                    <div class="partners__item">
+                    </a>
+                    <a href="https://www.sibur.ru/TomskNeftehim/" class="partners__item">
                         <img class="partners__images" src="{{ URL::asset('images/partners/5.png') }}" alt="">
-                    </div>
-                    <div class="partners__item">
+                    </a>
+                    <a href="https://www.sibur.ru/" class="partners__item">
                         <img class="partners__images" src="{{ URL::asset('images/partners/6.png') }}" alt="">
-                    </div>
-                    <div class="partners__item">
+                    </a>
+                    <a href="https://www.zavodsporta.ru/" class="partners__item">
                         <img class="partners__images" src="{{ URL::asset('images/partners/7.png') }}" alt="">
-                    </div>
-                    <div class="partners__item">
+                    </a>
+                    <a href="https://www.micran.ru/" class="partners__item">
                         <img class="partners__images" src="{{ URL::asset('images/partners/8.png') }}" alt="">
-                    </div>
-                    <div class="partners__item">
+                    </a>
+                    <a href="https://tomsk-tr.gazprom.ru/" class="partners__item">
                         <img class="partners__images" src="{{ URL::asset('images/partners/9.png') }}" alt="">
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
