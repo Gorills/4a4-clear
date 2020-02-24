@@ -97,26 +97,15 @@
 
 /***/ }),
 
-/***/ "./resources/sass/app.sass":
-/*!*********************************!*\
-  !*** ./resources/sass/app.sass ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 0:
 /*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.sass ***!
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
   \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\1\Desktop\OS\OSPanel\domains\4a4\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\1\Desktop\OS\OSPanel\domains\4a4\resources\sass\app.sass */"./resources/sass/app.sass");
+__webpack_require__(/*! C:\Users\1\Desktop\OS\OSPanel\domains\4a4-clear\resources\js\app.js */"./resources/js/app.js");
+!(function webpackMissingModule() { var e = new Error("Cannot find module 'C:\\Users\\1\\Desktop\\OS\\OSPanel\\domains\\4a4-clear\\resources\\sass\\app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 /***/ })

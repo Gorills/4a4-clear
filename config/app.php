@@ -1,7 +1,10 @@
 <?php
 
+
 return [
 
+    'company' => '"A4.click"',
+    'site_adress' => '"https://4a4.click"',
     /*
     |--------------------------------------------------------------------------
     | Application Name

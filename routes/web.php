@@ -42,4 +42,6 @@ Route::get('/politika', function () {
     return view('politika');
 });
 
+Route::get('/sendemail', 'SendEmailController@index');
 
+Route::post('/sendemail/send', 'SendEMailController@send');
