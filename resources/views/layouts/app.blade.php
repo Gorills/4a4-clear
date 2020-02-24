@@ -98,7 +98,7 @@
                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
                        </a>
 {{--                       <a href="" class="header__link-col">--}}
-{{--                           <i class="fa fa-vk" aria-hidden="true"></i>--}}
+{{--                           <i class="fab fa-telegram"></i>--}}
 {{--                       </a>--}}
 {{--                       <a href="" class="header__link-col">--}}
 {{--                           <i class="fa fa-instagram" aria-hidden="true"></i>--}}
@@ -281,5 +281,6 @@
         }
 
 
+    </script>
 </body>
 </html>
