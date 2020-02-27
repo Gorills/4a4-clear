@@ -8,7 +8,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+{{--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">--}}
+    <script src="https://kit.fontawesome.com/0af96d350a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>@yield('title')</title>
@@ -95,11 +96,11 @@
                <div class="header__col">
                    <div class="header__social">
                        <a href="https://api.whatsapp.com/send?phone=79832344044&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83..." class="header__link-col">
-                           <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                           <i class="fab fa-whatsapp"></i>
                        </a>
-{{--                       <a href="" class="header__link-col">--}}
-{{--                           <i class="fa fa-telegram" aria-hidden="true"></i>--}}
-{{--                       </a>--}}
+                       <a href="https://t.me/a4click" class="header__link-col">
+                           <i class="fab fa-telegram"></i>
+                       </a>
 {{--                       <a href="" class="header__link-col">--}}
 {{--                           <i class="fa fa-instagram" aria-hidden="true"></i>--}}
 {{--                       </a>--}}

@@ -139,13 +139,13 @@
                 <h2 class="section-standart__title">нас уже выбрали</h2>
 
                 <div class="partners">
-                    <a href="#" class="partners__item">
+                    <a href="https://www.svea.com/" class="partners__item">
                         <img class="partners__images" src="{{ URL::asset('images/partners/1.png') }}" alt="">
                     </a>
                     <a href="https://www.creditexpress.ru/#home-slider" class="partners__item">
                         <img class="partners__images" src="{{ URL::asset('images/partners/2.png') }}" alt="">
                     </a>
-                    <a href="http://www.stcollector.ru/" class="partners__item">
+                    <a href="http://www.capitalica.ru/" class="partners__item">
                         <img class="partners__images" src="{{ URL::asset('images/partners/3.png') }}" alt="">
                     </a>
                     <a href="https://rsvcollection.ru/" class="partners__item">
